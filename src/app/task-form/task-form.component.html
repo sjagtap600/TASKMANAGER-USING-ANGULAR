@@ -1,0 +1,14 @@
+<!-- task-form.component.html -->
+<form (ngSubmit)="onSubmit()" novalidate>
+    <label for="taskTitle">Task Title:</label>
+    <input
+      type="text"
+      id="taskTitle"
+      [(ngModel)]="title"
+      name="title"
+      
+      required
+    />
+    <button (click)="onSubmit()" type="submit">Add Task</button>
+  </form>
+  
